@@ -1,4 +1,3 @@
-#JESUS IS LORD!
 #TIC TAC TOE GAME BY ME!!
 # PLEASE FOLLOW ON INSTAGRAM @tobor._
 def displayboard(): #prints sample board
