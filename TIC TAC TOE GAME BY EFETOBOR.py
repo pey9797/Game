@@ -43,7 +43,6 @@ def play(position,board,marker):
             position = int(input('please input a position (1-9): '))
 counter2 = 0
 tries = 0
-count = 0
 gb1= [' ']*10
 displayboard()
 displayboard_2(gb1)
