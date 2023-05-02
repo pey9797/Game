@@ -13,6 +13,17 @@ def displayboard_2(gb1): #prints actual game board for playing
     print('---------')
     print(gb1[7] , "|" , gb1[8] , "|" , gb1[9])
 
+
+def computer_input(board):  #computer
+    marker = 'O'
+    while True:
+        stcom = random.randrange(1, 10)
+        if board[stcom] != ' ':
+            continue
+        else:
+            board[stcom] = marker
+            break
+
 def player_input():
     position = 0
     while position not in range(1,10):
@@ -73,15 +84,16 @@ while True:
     if ' ' not in gb1[3] and gb1[5] and gb1[7]:
         if gb1[3] == gb1[5] and gb1[5] == gb1[7]:
             break
-    position = player_input()
 
-    play(position,gb1,'O')
+
+    position = computer_input(gb1)
     tries += 1
     if tries > 8:
         counter2 += 1
         displayboard_2(gb1)
         break
     print()
+
 
     displayboard_2(gb1)
 
