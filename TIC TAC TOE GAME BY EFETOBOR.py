@@ -1,5 +1,3 @@
-#TIC TAC TOE GAME BY ME!!
-# PLEASE FOLLOW ON INSTAGRAM @tobor._
 def displayboard(): #prints sample board
     gb= [' ','1','2','3','4','5','6','7','8','9']
     print(gb[1],gb[2] ,gb[3], sep=" | ")
@@ -34,6 +32,7 @@ def play(position,board,marker):
             position = int(input('please input a position (1-9): '))
 counter2 = 0
 tries = 0
+count = 0
 gb1= [' ']*10
 displayboard()
 displayboard_2(gb1)
@@ -120,4 +119,3 @@ else: # this happens if any of the 8 win conditions were satisfied
     else:
         print()
         print("O wins!!!!!!!!!")
-# This is a  game I applied with my basic knowlegde of lists and functions
